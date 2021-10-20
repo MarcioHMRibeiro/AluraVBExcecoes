@@ -1,0 +1,11 @@
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\bin\Debug\ByteBank.exe.config
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\bin\Debug\ByteBank.exe
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\bin\Debug\ByteBank.pdb
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\bin\Debug\ByteBank.xml
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.Frm_Principal.resources
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.Resources.resources
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.vbproj.GenerateResource.cache
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.vbproj.CoreCompileInputs.cache
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.exe
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.xml
+C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.pdb

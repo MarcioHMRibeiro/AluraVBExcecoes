@@ -1,0 +1,12 @@
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\bin\Debug\Excecoes.exe.config
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\bin\Debug\Excecoes.exe
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\bin\Debug\Excecoes.pdb
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\bin\Debug\Excecoes.xml
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\obj\Debug\Excecoes.vbprojAssemblyReference.cache
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\obj\Debug\Excecoes.Frm_Principal.resources
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\obj\Debug\Excecoes.Resources.resources
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\obj\Debug\Excecoes.vbproj.GenerateResource.cache
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\obj\Debug\Excecoes.vbproj.CoreCompileInputs.cache
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\obj\Debug\Excecoes.exe
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\obj\Debug\Excecoes.xml
+C:\Users\Caleum\source\repos\Excecoes\Excecoes\obj\Debug\Excecoes.pdb
