@@ -9,3 +9,15 @@ C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.vbproj.CoreCom
 C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.exe
 C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.xml
 C:\Users\Caleum\source\repos\Excecoes\ByteBank\obj\Debug\ByteBank.pdb
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\bin\Debug\ByteBank.exe.config
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\bin\Debug\ByteBank.exe
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\bin\Debug\ByteBank.pdb
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\bin\Debug\ByteBank.xml
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\obj\Debug\ByteBank.vbproj.AssemblyReference.cache
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\obj\Debug\ByteBank.Frm_Principal.resources
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\obj\Debug\ByteBank.Resources.resources
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\obj\Debug\ByteBank.vbproj.GenerateResource.cache
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\obj\Debug\ByteBank.vbproj.CoreCompileInputs.cache
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\obj\Debug\ByteBank.exe
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\obj\Debug\ByteBank.xml
+M:\Estudos\AluraVBExcecoes\Excecoes\ByteBank\obj\Debug\ByteBank.pdb
