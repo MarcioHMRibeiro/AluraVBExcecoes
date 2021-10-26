@@ -7,7 +7,7 @@
         Public Property titular As Cliente
 
         'NUMERO DA CONTA - Propriedade
-        Public Property numero As Integer
+        Public ReadOnly Property numero As Integer
 
         'TAXA DE OPERAÇÃO - Propriedade
         Private Shared m_TaxaOperacao As Integer
@@ -26,19 +26,7 @@
         End Property
 
         'AGENCIA DA CONTA (Se for menor que 0 fica 0, se for maior recebe o valor inserido)- Propriedade
-        Private m_agencia As Integer
-        Public Property agencia As Integer
-            Get
-                Return m_agencia
-            End Get
-            Set(value As Integer)
-                If value <= 0 Then
-                    m_agencia = 0
-                Else
-                    m_agencia = value
-                End If
-            End Set
-        End Property
+        Public ReadOnly Property agencia As Integer
 
         'SALDO DA CONTA (Começa com 100, se for -0 fica como 0 e se for maior, recebe o valor inserido)- Propriedade
         Private m_saldo As Double = 100
@@ -59,11 +47,16 @@
 #Region "CONSTRUTORES"
         'CALCULO DA TAXA (Realiza o calculo da taxa e contabiliza quantas contas estão criadas no sistema)- Construtor
         Public Sub New(_Agencia As Integer, _numero As Integer)
-            m_agencia = _Agencia
-            numero = _numero
 
-            m_TaxaOperacao = 30 / m_TotalDeContasCriadas
+            If (_Agencia <= 0) Or (_numero <= 0) Then
+                m_TaxaOperacao = 30 / m_TotalDeContasCriadas
+                'Throw New Exception - Cria uma exeção generica 
+            End If
+
+            agencia = _Agencia
+            numero = _numero
             m_TotalDeContasCriadas += 1
+            m_TaxaOperacao = 30 / m_TotalDeContasCriadas
 
         End Sub
 #End Region

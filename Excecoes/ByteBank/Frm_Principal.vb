@@ -90,4 +90,18 @@ Public Class Frm_Principal
             Throw 'Comando para sair da função.
         End Try
     End Function
+
+    Private Sub Video04ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Video04ToolStripMenuItem.Click
+
+        Try
+            Dim Conta As New ContaCorrente(277, 234332)
+            MsgBox("Numero Conta: " + Conta.numero.ToString + vbCrLf + "Numero Agencia: " + Conta.agencia.ToString)
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro: " + ex.Message)
+        End Try
+
+
+
+
+    End Sub
 End Class

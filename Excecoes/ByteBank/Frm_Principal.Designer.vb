@@ -27,9 +27,11 @@ Partial Class Frm_Principal
         Me.Aula01ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Video01ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Video02ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Video03ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Txt_Denominador = New System.Windows.Forms.TextBox()
         Me.Lbl_Denominador = New System.Windows.Forms.Label()
-        Me.Video03ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AulaO2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Video04ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +46,7 @@ Partial Class Frm_Principal
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Aula01ToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Aula01ToolStripMenuItem, Me.AulaO2ToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(428, 24)
@@ -70,6 +72,12 @@ Partial Class Frm_Principal
         Me.Video02ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Video02ToolStripMenuItem.Text = "Video 02"
         '
+        'Video03ToolStripMenuItem
+        '
+        Me.Video03ToolStripMenuItem.Name = "Video03ToolStripMenuItem"
+        Me.Video03ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Video03ToolStripMenuItem.Text = "Video 03"
+        '
         'Txt_Denominador
         '
         Me.Txt_Denominador.Location = New System.Drawing.Point(15, 73)
@@ -86,11 +94,18 @@ Partial Class Frm_Principal
         Me.Lbl_Denominador.TabIndex = 3
         Me.Lbl_Denominador.Text = "Label1"
         '
-        'Video03ToolStripMenuItem
+        'AulaO2ToolStripMenuItem
         '
-        Me.Video03ToolStripMenuItem.Name = "Video03ToolStripMenuItem"
-        Me.Video03ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.Video03ToolStripMenuItem.Text = "Video 03"
+        Me.AulaO2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Video04ToolStripMenuItem})
+        Me.AulaO2ToolStripMenuItem.Name = "AulaO2ToolStripMenuItem"
+        Me.AulaO2ToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.AulaO2ToolStripMenuItem.Text = "Aula o2"
+        '
+        'Video04ToolStripMenuItem
+        '
+        Me.Video04ToolStripMenuItem.Name = "Video04ToolStripMenuItem"
+        Me.Video04ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Video04ToolStripMenuItem.Text = "Video 04"
         '
         'Frm_Principal
         '
@@ -120,4 +135,6 @@ Partial Class Frm_Principal
     Friend WithEvents Txt_Denominador As TextBox
     Friend WithEvents Lbl_Denominador As Label
     Friend WithEvents Video03ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AulaO2ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Video04ToolStripMenuItem As ToolStripMenuItem
 End Class
