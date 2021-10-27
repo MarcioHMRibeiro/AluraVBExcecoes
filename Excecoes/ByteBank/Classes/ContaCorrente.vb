@@ -49,8 +49,13 @@
         Public Sub New(_Agencia As Integer, _numero As Integer)
 
             If (_Agencia <= 0) Or (_numero <= 0) Then
-                m_TaxaOperacao = 30 / m_TotalDeContasCriadas
+
+                Dim Excecao As New Exception("Código ou Numero menor que 0!!")
+                Throw Excecao
+
+                'm_TaxaOperacao = 30 / m_TotalDeContasCriadas
                 'Throw New Exception - Cria uma exeção generica 
+
             End If
 
             agencia = _Agencia

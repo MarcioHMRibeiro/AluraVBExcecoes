@@ -100,8 +100,5 @@ Public Class Frm_Principal
             MsgBox("Ocorreu um erro: " + ex.Message)
         End Try
 
-
-
-
     End Sub
 End Class
