@@ -46,20 +46,27 @@
 
 #Region "CONSTRUTORES"
         'CALCULO DA TAXA (Realiza o calculo da taxa e contabiliza quantas contas estão criadas no sistema)- Construtor
-        Public Sub New(_Agencia As Integer, _numero As Integer)
+        Public Sub New(vAgencia As Integer, vNumero As Integer)
 
-            If (_Agencia <= 0) Or (_numero <= 0) Then
+            If (vAgencia <= 0) And (vNumero <= 0) Then
 
-                Dim Excecao As New Exception("Código ou Numero menor que 0!!")
-                Throw Excecao
+                Dim vParametro As String
+                vParametro = NameOf(vAgencia)
 
-                'm_TaxaOperacao = 30 / m_TotalDeContasCriadas
-                'Throw New Exception - Cria uma exeção generica 
+                Dim Erro As New ArgumentException("Agencia e Conta menor que 0!!", vParametro)
+                Throw Erro
 
+            ElseIf (vAgencia <= 0) Then
+                Dim Erro As New Exception("Agencia menor que 0!!")
+                Throw Erro
+
+            ElseIf (vNumero <= 0) Then
+                Dim Erro As New Exception("Conta menor que 0!!")
+                Throw Erro
             End If
 
-            agencia = _Agencia
-            numero = _numero
+            vAgencia = vAgencia
+            vNumero = vNumero
             m_TotalDeContasCriadas += 1
             m_TaxaOperacao = 30 / m_TotalDeContasCriadas
 

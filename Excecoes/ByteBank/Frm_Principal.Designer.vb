@@ -28,11 +28,19 @@ Partial Class Frm_Principal
         Me.Video01ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Video02ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Video03ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Txt_Denominador = New System.Windows.Forms.TextBox()
-        Me.Lbl_Denominador = New System.Windows.Forms.Label()
         Me.AulaO2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Video04ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Txt_Denominador = New System.Windows.Forms.TextBox()
+        Me.Lbl_Denominador = New System.Windows.Forms.Label()
+        Me.Grp_DivisaoZero = New System.Windows.Forms.GroupBox()
+        Me.Grp_AgenciaConta = New System.Windows.Forms.GroupBox()
+        Me.Lbl_Agencia = New System.Windows.Forms.Label()
+        Me.Lbl_Conta = New System.Windows.Forms.Label()
+        Me.Txt_Agencia = New System.Windows.Forms.TextBox()
+        Me.Txt_Conta = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
+        Me.Grp_DivisaoZero.SuspendLayout()
+        Me.Grp_AgenciaConta.SuspendLayout()
         Me.SuspendLayout()
         '
         'Lbl_Principal
@@ -63,24 +71,37 @@ Partial Class Frm_Principal
         'Video01ToolStripMenuItem
         '
         Me.Video01ToolStripMenuItem.Name = "Video01ToolStripMenuItem"
-        Me.Video01ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Video01ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.Video01ToolStripMenuItem.Text = "Video 01"
         '
         'Video02ToolStripMenuItem
         '
         Me.Video02ToolStripMenuItem.Name = "Video02ToolStripMenuItem"
-        Me.Video02ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Video02ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.Video02ToolStripMenuItem.Text = "Video 02"
         '
         'Video03ToolStripMenuItem
         '
         Me.Video03ToolStripMenuItem.Name = "Video03ToolStripMenuItem"
-        Me.Video03ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Video03ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.Video03ToolStripMenuItem.Text = "Video 03"
+        '
+        'AulaO2ToolStripMenuItem
+        '
+        Me.AulaO2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Video04ToolStripMenuItem})
+        Me.AulaO2ToolStripMenuItem.Name = "AulaO2ToolStripMenuItem"
+        Me.AulaO2ToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
+        Me.AulaO2ToolStripMenuItem.Text = "Aula 02"
+        '
+        'Video04ToolStripMenuItem
+        '
+        Me.Video04ToolStripMenuItem.Name = "Video04ToolStripMenuItem"
+        Me.Video04ToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.Video04ToolStripMenuItem.Text = "Video 04"
         '
         'Txt_Denominador
         '
-        Me.Txt_Denominador.Location = New System.Drawing.Point(15, 73)
+        Me.Txt_Denominador.Location = New System.Drawing.Point(9, 32)
         Me.Txt_Denominador.Name = "Txt_Denominador"
         Me.Txt_Denominador.Size = New System.Drawing.Size(100, 20)
         Me.Txt_Denominador.TabIndex = 2
@@ -88,32 +109,73 @@ Partial Class Frm_Principal
         'Lbl_Denominador
         '
         Me.Lbl_Denominador.AutoSize = True
-        Me.Lbl_Denominador.Location = New System.Drawing.Point(12, 57)
+        Me.Lbl_Denominador.Location = New System.Drawing.Point(6, 16)
         Me.Lbl_Denominador.Name = "Lbl_Denominador"
         Me.Lbl_Denominador.Size = New System.Drawing.Size(39, 13)
         Me.Lbl_Denominador.TabIndex = 3
         Me.Lbl_Denominador.Text = "Label1"
         '
-        'AulaO2ToolStripMenuItem
+        'Grp_DivisaoZero
         '
-        Me.AulaO2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Video04ToolStripMenuItem})
-        Me.AulaO2ToolStripMenuItem.Name = "AulaO2ToolStripMenuItem"
-        Me.AulaO2ToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
-        Me.AulaO2ToolStripMenuItem.Text = "Aula o2"
+        Me.Grp_DivisaoZero.Controls.Add(Me.Txt_Denominador)
+        Me.Grp_DivisaoZero.Controls.Add(Me.Lbl_Denominador)
+        Me.Grp_DivisaoZero.Location = New System.Drawing.Point(15, 51)
+        Me.Grp_DivisaoZero.Name = "Grp_DivisaoZero"
+        Me.Grp_DivisaoZero.Size = New System.Drawing.Size(123, 68)
+        Me.Grp_DivisaoZero.TabIndex = 4
+        Me.Grp_DivisaoZero.TabStop = False
         '
-        'Video04ToolStripMenuItem
+        'Grp_AgenciaConta
         '
-        Me.Video04ToolStripMenuItem.Name = "Video04ToolStripMenuItem"
-        Me.Video04ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.Video04ToolStripMenuItem.Text = "Video 04"
+        Me.Grp_AgenciaConta.Controls.Add(Me.Txt_Conta)
+        Me.Grp_AgenciaConta.Controls.Add(Me.Txt_Agencia)
+        Me.Grp_AgenciaConta.Controls.Add(Me.Lbl_Conta)
+        Me.Grp_AgenciaConta.Controls.Add(Me.Lbl_Agencia)
+        Me.Grp_AgenciaConta.Location = New System.Drawing.Point(210, 67)
+        Me.Grp_AgenciaConta.Name = "Grp_AgenciaConta"
+        Me.Grp_AgenciaConta.Size = New System.Drawing.Size(200, 104)
+        Me.Grp_AgenciaConta.TabIndex = 5
+        Me.Grp_AgenciaConta.TabStop = False
+        '
+        'Lbl_Agencia
+        '
+        Me.Lbl_Agencia.AutoSize = True
+        Me.Lbl_Agencia.Location = New System.Drawing.Point(6, 19)
+        Me.Lbl_Agencia.Name = "Lbl_Agencia"
+        Me.Lbl_Agencia.Size = New System.Drawing.Size(39, 13)
+        Me.Lbl_Agencia.TabIndex = 4
+        Me.Lbl_Agencia.Text = "Label1"
+        '
+        'Lbl_Conta
+        '
+        Me.Lbl_Conta.AutoSize = True
+        Me.Lbl_Conta.Location = New System.Drawing.Point(6, 57)
+        Me.Lbl_Conta.Name = "Lbl_Conta"
+        Me.Lbl_Conta.Size = New System.Drawing.Size(39, 13)
+        Me.Lbl_Conta.TabIndex = 5
+        Me.Lbl_Conta.Text = "Label1"
+        '
+        'Txt_Agencia
+        '
+        Me.Txt_Agencia.Location = New System.Drawing.Point(9, 35)
+        Me.Txt_Agencia.Name = "Txt_Agencia"
+        Me.Txt_Agencia.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Agencia.TabIndex = 6
+        '
+        'Txt_Conta
+        '
+        Me.Txt_Conta.Location = New System.Drawing.Point(9, 74)
+        Me.Txt_Conta.Name = "Txt_Conta"
+        Me.Txt_Conta.Size = New System.Drawing.Size(100, 20)
+        Me.Txt_Conta.TabIndex = 7
         '
         'Frm_Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(428, 268)
-        Me.Controls.Add(Me.Lbl_Denominador)
-        Me.Controls.Add(Me.Txt_Denominador)
+        Me.Controls.Add(Me.Grp_AgenciaConta)
+        Me.Controls.Add(Me.Grp_DivisaoZero)
         Me.Controls.Add(Me.Lbl_Principal)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -122,6 +184,10 @@ Partial Class Frm_Principal
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.Grp_DivisaoZero.ResumeLayout(False)
+        Me.Grp_DivisaoZero.PerformLayout()
+        Me.Grp_AgenciaConta.ResumeLayout(False)
+        Me.Grp_AgenciaConta.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -137,4 +203,10 @@ Partial Class Frm_Principal
     Friend WithEvents Video03ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AulaO2ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Video04ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Grp_DivisaoZero As GroupBox
+    Friend WithEvents Grp_AgenciaConta As GroupBox
+    Friend WithEvents Txt_Conta As TextBox
+    Friend WithEvents Txt_Agencia As TextBox
+    Friend WithEvents Lbl_Conta As Label
+    Friend WithEvents Lbl_Agencia As Label
 End Class

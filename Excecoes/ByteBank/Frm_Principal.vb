@@ -12,6 +12,8 @@ Public Class Frm_Principal
         Me.Text = "Projeto ByteBank"
         Lbl_Principal.Text = "Projeto ByteBank"
         Lbl_Denominador.Text = "Digite o denominador:"
+        Lbl_Agencia.Text = "Agencia"
+        Lbl_Conta.Text = "Conta"
 
 
     End Sub
@@ -94,11 +96,20 @@ Public Class Frm_Principal
     Private Sub Video04ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Video04ToolStripMenuItem.Click
 
         Try
-            Dim Conta As New ContaCorrente(277, 234332)
+            Dim vAgencia As Integer = Val(Txt_Agencia.Text)
+            Dim vConta As Integer = Val(Txt_Conta.Text)
+
+            Dim Conta As New ContaCorrente(vAgencia, vConta)
             MsgBox("Numero Conta: " + Conta.numero.ToString + vbCrLf + "Numero Agencia: " + Conta.agencia.ToString)
+        Catch ex As ArgumentException
+            MsgBox(ex.Message)
         Catch ex As Exception
-            MsgBox("Ocorreu um erro: " + ex.Message)
+            MsgBox(ex.Message)
         End Try
+
+    End Sub
+
+    Private Sub Grp_AgenciaConta_Enter(sender As Object, e As EventArgs) Handles Grp_AgenciaConta.Enter
 
     End Sub
 End Class
